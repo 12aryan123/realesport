@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Frank';
+    src: url('Frank-Regular.eot');
+    src: url('Frank-Regular.eot?#iefix') format('embedded-opentype'), url('Frank-Regular.woff2') format('woff2'), url('Frank-Regular.woff') format('woff'), url('Frank-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank';
+    src: url('Frank-Black.eot');
+    src: url('Frank-Black.eot?#iefix') format('embedded-opentype'), url('Frank-Black.woff2') format('woff2'), url('Frank-Black.woff') format('woff'), url('Frank-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank';
+    src: url('Frank-Thin.eot');
+    src: url('Frank-Thin.eot?#iefix') format('embedded-opentype'), url('Frank-Thin.woff2') format('woff2'), url('Frank-Thin.woff') format('woff'), url('Frank-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank';
+    src: url('Frank-Light.eot');
+    src: url('Frank-Light.eot?#iefix') format('embedded-opentype'), url('Frank-Light.woff2') format('woff2'), url('Frank-Light.woff') format('woff'), url('Frank-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frank';
+    src: url('Frank-Bold.eot');
+    src: url('Frank-Bold.eot?#iefix') format('embedded-opentype'), url('Frank-Bold.woff2') format('woff2'), url('Frank-Bold.woff') format('woff'), url('Frank-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brixton_Wood Vector';
+    src: url('Brixton_Wood-Vector.eot');
+    src: url('Brixton_Wood-Vector.eot?#iefix') format('embedded-opentype'), url('Brixton_Wood-Vector.woff2') format('woff2'), url('Brixton_Wood-Vector.woff') format('woff'), url('Brixton_Wood-Vector.ttf') format('truetype'), url('Brixton_Wood-Vector.svg#Brixton_Wood-Vector') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brixton_Lead Vector';
+    src: url('Brixton_Lead-Vector.eot');
+    src: url('Brixton_Lead-Vector.eot?#iefix') format('embedded-opentype'), url('Brixton_Lead-Vector.woff2') format('woff2'), url('Brixton_Lead-Vector.woff') format('woff'), url('Brixton_Lead-Vector.ttf') format('truetype'), url('Brixton_Lead-Vector.svg#Brixton_Lead-Vector') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* @font-face {
+    font-family: 'Arial';
+    src: url('Arial-BoldMT.eot');
+    src: url('Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+        url('Arial-BoldMT.woff2') format('woff2'),
+        url('Arial-BoldMT.woff') format('woff'),
+        url('Arial-BoldMT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-MT.eot');
+    src: url('Arial-MT.eot?#iefix') format('embedded-opentype'),
+        url('Arial-MT.woff2') format('woff2'),
+        url('Arial-MT.woff') format('woff'),
+        url('Arial-MT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-MT_1.eot');
+    src: url('Arial-MT_1.eot?#iefix') format('embedded-opentype'),
+        url('Arial-MT_1.woff2') format('woff2'),
+        url('Arial-MT_1.woff') format('woff'),
+        url('Arial-MT_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Arial-BoldMT_1.eot');
+    src: url('Arial-BoldMT_1.eot?#iefix') format('embedded-opentype'),
+        url('Arial-BoldMT_1.woff2') format('woff2'),
+        url('Arial-BoldMT_1.woff') format('woff'),
+        url('Arial-BoldMT_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
