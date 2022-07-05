@@ -105,6 +105,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 .id-form .check {
     margin-top: 15px;
     position: relative;
+    margin: 0 auto;
     padding: 5px 10px;
     /* background: #FF4800; */
     background-color: rgb(111, 255, 0) !important;
@@ -114,7 +115,6 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     width: 100px;
     height: 40px;
     border-radius: 50px;
-    text-align: center;
 
 
 }
