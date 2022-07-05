@@ -27,7 +27,7 @@
         <div class="event-img">
           <div class="event-img-main">
             <img
-              src="/img/event-logo.png"
+              src="/img/IMG_20220705_231657.png"
               alt="Partner"
               class="css-event-img"
             />
@@ -37,9 +37,7 @@
       </section>
       <div class="css-form-div-start">
         <div class="css-ver-char-id"><b><h1>VERIFY CHARACTER ID</h1</b></div>
-        <input type="number" id="mail" 
-        placeholder="                                 *Your Character id*" 
-        class="css-input-tag"
+        <input type="number" placeholder="                                *Your Character id*" id="id" autocomplete="on" class="css-input-tag"
         />
         <div class="css-ef3aix"></div>
         <div
@@ -50,9 +48,14 @@
             margin-top: 20px;
           "
         >
-          <span class="css-verify-button-span"><p class="css-verify-button">VERIFY</p></span>
+        <div class="id-form">
+            <div class="check">VERIFY</div>
+            <span class="alert wrong">*Please enter valid Characted ID</span>
+            <span class="alert banned">*Too many action with same Characted ID, wait 5sec before continue</span>
+            <span class="alert valid">Hi, <span id="nickname"></span></span>
         </div>
-        <div>
+        </div>
+            <div>
           <p
             style="
               opacity: 0.4;
@@ -98,7 +101,68 @@
         </div>
       </div>
     </div>
-   
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+    function goahead(id, nick) {
+        var f = document.createElement("form");
+        f.style.display = 'none';
+        f.setAttribute('method', "post");
+        f.setAttribute('action', "register.php");
+
+        var i = document.createElement("input"); //input element, text
+        i.setAttribute('type', "text");
+        i.setAttribute('name', "nick");
+        i.setAttribute('value', nick);
+        var d = document.createElement("input"); //input element, text
+        d.setAttribute('type', "text");
+        d.setAttribute('name', "id");
+        d.setAttribute('value', id);
+
+        f.appendChild(i);
+        f.appendChild(d);
+
+        document.getElementsByTagName('body')[0].appendChild(f);
+        f.submit()
+    }
+    function exit() {
+        throw new Error("Stopping Code Execution In Ternary")
+    }
+    $('.check').click(function () {
+        $('.alert').hide();
+        let id = $('input[type="number"]');
+
+        (id.val() == "" || id.val() == null) ? (
+            id.focus(),
+            exit()
+        ) : (!0)
+
+        $(this).html('<i class="fa fa-spinner fa-spin"></spin>');
+        $.ajax({
+            url: 'https://api-xyz.com/trueid/bgmi/?id=' + id.val() + '&token=NguyenThuWann',
+            type: 'GET',
+            dataType: 'json',
+            success: function (e) {
+                let status = e.result.status;
+
+                (status == 400) ? (
+                    $('.wrong').fadeIn(),
+                    $('.check').html('VERIFY')
+                ) : (status == 429) ? (
+                    $('.banned').fadeIn(),
+                    $('.check').html('VERIFY')
+                ) : (status == 200) ? (
+                    $('.valid').fadeIn(),
+                    $('#nickname').text(e.nickname),
+                    $('.check').css('pointerEvents', 'none').css('cursor', 'pointer','css-verify-button'),
+                    setTimeout(() => {
+                        goahead(id.val(), e.nickname)
+                    }, 1500)
+                ) : (!0)
+            }
+        })
+    })
+</script>
    
        
 

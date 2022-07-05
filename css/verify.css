@@ -22,7 +22,6 @@ margin: 0 auto;
 
     }
     .event-test{
-        background-image: url(/img/home-banner.png);
    
     }
 
@@ -36,19 +35,32 @@ margin: 0 auto;
     margin: 0 auto;
    }
 
-   .css-verify-button{
+   /* .css-verify-button{
 position: relative;
-    margin: auto;
-    display: block;
-    text-align: center;
-    border-radius: 50px;
-    background-color: rgb(111, 255, 0);
-    font-size: 20px;
-    width: 150px;
-    height: 50px;
-    padding-top: 11px;
+    margin: auto !important;
+    display: block !important;
+    text-align: center !important;
+    border-radius: 50px !important;
+    background-color: rgb(111, 255, 0) !important;
+    font-size: 20px !important;
+    width: 150px !important;
+    height: 50px !important;
+    padding-top: 11px !important;
    }
+   
+   .css-verify-button .check{
 
+    position: relative;
+        margin: auto !important;
+        display: block !important;
+        text-align: center !important;
+        border-radius: 50px !important;
+        background-color: rgb(111, 255, 0) !important;
+        font-size: 20px !important;
+        width: 150px !important;
+        height: 50px !important;
+        padding-top: 11px !important;
+       } */
    .css-ver-char-id{
     padding-top: 30px;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
@@ -58,4 +70,70 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     border-radius: 10px;
     width: 400px;
     height: 40px;
+}
+
+
+
+
+/* id form */
+
+.wrap .id-form {
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.id-form input {
+    width: 70%;
+    background: rgba(255, 255, 255, .50);
+    border: none;
+    outline: none;
+    padding: 10px;
+    /* font-family: 'frank'; */
+    color: #fff;
+}
+
+.id-form input::placeholder {
+    color: #fff;
+}
+
+.id-form .check {
+    margin-top: 15px;
+    position: relative;
+    padding: 5px 10px;
+    /* background: #FF4800; */
+    background-color: rgb(111, 255, 0) !important;
+    /* font-family: 'frank'; */
+    color: #fff;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+
+
+}
+
+
+.id-form .alert {
+    margin-top: 10px;
+    /* font-family: 'Teko'; */
+    display: none;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.id-form .alert.wrong,
+.id-form .alert.banned {
+    color: red;
+}
+
+.id-form .alert.valid {
+    color: lime;
 }
