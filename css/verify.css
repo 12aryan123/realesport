@@ -1,0 +1,61 @@
+body {
+    margin-top: 0px;
+    }
+    
+    .fa, .fas {
+        font-family: 'FontAwesome';
+    }
+    .css-event-img{
+        
+position: relative;
+display: block;
+text-align: center;
+margin: 0 auto;
+    }
+ 
+    .event-img {
+ /* margin-inline: 150px; */
+
+    }
+    .event-img-main {
+
+
+    }
+    .event-test{
+        background-image: url(/img/home-banner.png);
+   
+    }
+
+    /* verify form starts */
+   .css-form-div-start{
+    background-color: #80ff0050;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+   }
+
+   .css-verify-button{
+position: relative;
+    margin: auto;
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(111, 255, 0);
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    padding-top: 11px;
+   }
+
+   .css-ver-char-id{
+    padding-top: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+   }
+   .css-input-tag{
+    border-radius: 10px;
+    width: 400px;
+    height: 40px;
+}

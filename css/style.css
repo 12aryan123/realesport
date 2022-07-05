@@ -73,7 +73,7 @@ body {
         -webkit-letter-spacings: -0.5px;
         -moz-letter-spacings: -0.5px;
         -ms-letter-spacings: -0.5px;
-        letter-spacings: -0.5px;
+        letter-spacing: -0.5px;
         padding: 11px 20px 10px;
         font-family: 'DM Sans',sans-serif;
         cursor: pointer;
