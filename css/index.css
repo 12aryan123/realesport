@@ -64,7 +64,7 @@ body {
         margin-left: auto;
     }
     .css-nav-button-div {
-       margin-left: 330px;
+       margin-left: 150px;
        border-radius: 20px;
 border-width: 2px;
 border-color: #0e4cd2;
@@ -78,7 +78,7 @@ background-color: transparent;
 }
 
 .css-nav-button-div:hover {
-  margin-left: 330px;
+  margin-left: 150px;
   border-radius: 20px;
 border-width: 2px;
 border-color: #ffffff;
